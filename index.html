@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jolyn & Dioswa | April 25, 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;500;600&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --blue-deep:   #3a5f7d;
+      --blue-mid:    #5A7D9A;
+      --blue-light:  #D6E0EA;
+      --blue-pale:   #EFF4F8;
+      --champagne:   #F5F1E6;
+      --silver:      #E8B4B8;
+      --silver-dark: #c47e84;
+      --slate:       #1e2d3a;
+      --white:       #FBFCFE;
+    }
+
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      color: var(--slate);
+      background: var(--white);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NOISE TEXTURE ── */
+    body::after {
+      content:'';
+      position:fixed; inset:0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='250' height='250' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+      pointer-events:none; z-index:9999;
+    }
+
+    /* ── FLORAL BACKGROUND HINTS ── */
+    /* Tiling botanical watermark across the whole page */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420' viewBox='0 0 420 420'%3E%3Cg opacity='0.045' fill='none' stroke='%235A7D9A' stroke-linecap='round' stroke-linejoin='round'%3E%3C!-- stem --%3E%3Cpath d='M210 380 Q205 320 195 280 Q185 240 200 200' stroke-width='1.5'/%3E%3Cpath d='M210 380 Q215 340 225 300 Q235 260 220 210' stroke-width='1.2'/%3E%3C!-- left branch --%3E%3Cpath d='M200 290 Q170 275 150 255 Q135 238 140 220' stroke-width='1'/%3E%3Cpath d='M197 270 Q172 260 158 242' stroke-width='0.8'/%3E%3C!-- right branch --%3E%3Cpath d='M218 295 Q245 278 262 258 Q275 240 268 222' stroke-width='1'/%3E%3Cpath d='M220 274 Q243 262 255 245' stroke-width='0.8'/%3E%3C!-- top spray --%3E%3Cpath d='M204 205 Q195 185 180 170 Q168 158 160 145' stroke-width='1'/%3E%3Cpath d='M208 200 Q205 178 210 160 Q213 145 218 132' stroke-width='1'/%3E%3Cpath d='M215 207 Q228 186 240 172 Q250 160 258 148' stroke-width='1'/%3E%3C!-- leaves left branch --%3E%3Cellipse cx='145' cy='237' rx='14' ry='7' transform='rotate(-35 145 237)' stroke-width='0.9' fill='%235A7D9A' fill-opacity='0.06'/%3E%3Cellipse cx='162' cy='252' rx='11' ry='6' transform='rotate(-25 162 252)' stroke-width='0.8' fill='%235A7D9A' fill-opacity='0.05'/%3E%3C!-- leaves right branch --%3E%3Cellipse cx='265' cy='240' rx='14' ry='7' transform='rotate(35 265 240)' stroke-width='0.9' fill='%235A7D9A' fill-opacity='0.06'/%3E%3Cellipse cx='248' cy='256' rx='11' ry='6' transform='rotate(25 248 256)' stroke-width='0.8' fill='%235A7D9A' fill-opacity='0.05'/%3E%3C!-- blossoms top --%3E%3Ccircle cx='160' cy='143' r='8' stroke-width='0.9' fill='%23E8B4B8' fill-opacity='0.12'/%3E%3Ccircle cx='160' cy='143' r='4' fill='%23E8B4B8' fill-opacity='0.15' stroke='none'/%3E%3Ccircle cx='218' cy='130' r='9' stroke-width='0.9' fill='%23E8B4B8' fill-opacity='0.12'/%3E%3Ccircle cx='218' cy='130' r='4.5' fill='%23E8B4B8' fill-opacity='0.15' stroke='none'/%3E%3Ccircle cx='258' cy='146' r='7' stroke-width='0.9' fill='%23E8B4B8' fill-opacity='0.12'/%3E%3Ccircle cx='258' cy='146' r='3.5' fill='%23E8B4B8' fill-opacity='0.15' stroke='none'/%3E%3C!-- petal rings on main blossoms --%3E%3Ccircle cx='218' cy='130' r='14' stroke-width='0.5' stroke='%23E8B4B8' stroke-opacity='0.18' fill='none'/%3E%3Ccircle cx='160' cy='143' r='12' stroke-width='0.5' stroke='%23E8B4B8' stroke-opacity='0.18' fill='none'/%3E%3C!-- small buds --%3E%3Cellipse cx='185' cy='168' rx='3' ry='6' transform='rotate(-20 185 168)' fill='%23E8B4B8' fill-opacity='0.1' stroke='%23E8B4B8' stroke-width='0.6'/%3E%3Cellipse cx='238' cy='172' rx='3' ry='6' transform='rotate(20 238 172)' fill='%23E8B4B8' fill-opacity='0.1' stroke='%23E8B4B8' stroke-width='0.6'/%3E%3Cellipse cx='210' cy='158' rx='2.5' ry='5' fill='%23E8B4B8' fill-opacity='0.1' stroke='%23E8B4B8' stroke-width='0.6'/%3E%3C!-- tiny accent dots --%3E%3Ccircle cx='175' cy='178' r='2' fill='%235A7D9A' fill-opacity='0.1' stroke='none'/%3E%3Ccircle cx='245' cy='180' r='2' fill='%235A7D9A' fill-opacity='0.1' stroke='none'/%3E%3Ccircle cx='210' cy='175' r='1.5' fill='%235A7D9A' fill-opacity='0.1' stroke='none'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: 420px 420px;
+      background-repeat: repeat;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Floral corner accents — fixed in viewport corners */
+    .floral-corner {
+      position: fixed;
+      width: 280px;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0;
+      animation: floralFadeIn 2s 0.5s ease forwards;
+    }
+    @keyframes floralFadeIn {
+      to { opacity: 1; }
+    }
+    .floral-corner.tl { top: 0; left: 0; transform: rotate(0deg); }
+    .floral-corner.tr { top: 0; right: 0; transform: rotate(90deg); }
+    .floral-corner.bl { bottom: 0; left: 0; transform: rotate(270deg); }
+    .floral-corner.br { bottom: 0; right: 0; transform: rotate(180deg); }
+
+    @media(max-width: 640px) {
+      .floral-corner { width: 160px; }
+    }
+
+    /* ─────────────────── HEADER ─────────────────── */
+    header {
+      position: fixed; top:0; width:100%; z-index:100;
+      padding: 14px 30px;
+      display: flex; justify-content: center; align-items: center;
+      background: rgba(251,252,254,0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(90,125,154,0.12);
+    }
+    header .monogram {
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.35em;
+      color: var(--blue-mid);
+    }
+
+    /* ─────────────────── HERO ─────────────────── */
+    .hero {
+      height: 100vh;
+      position: relative;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+      background: linear-gradient(160deg, var(--blue-deep) 0%, #2b4a62 50%, #1a3347 100%);
+    }
+
+    /* Animated orb backgrounds */
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      animation: orbFloat 8s ease-in-out infinite;
+    }
+    .orb1 { width:450px; height:450px; background:rgba(90,125,154,0.35); top:-100px; right:-80px; animation-delay:0s; }
+    .orb2 { width:300px; height:300px; background:rgba(214,224,234,0.15); bottom:50px; left:-60px; animation-delay:-3s; }
+    .orb3 { width:200px; height:200px; background:rgba(245,241,230,0.1); top:40%; left:30%; animation-delay:-5s; }
+
+    @keyframes orbFloat {
+      0%,100% { transform: translate(0,0) scale(1); }
+      33%      { transform: translate(20px,-30px) scale(1.05); }
+      66%      { transform: translate(-15px,20px) scale(0.97); }
+    }
+
+    /* Decorative lines */
+    .hero-lines {
+      position:absolute; inset:0;
+      background-image:
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 59px,
+          rgba(214,224,234,0.04) 60px
+        ),
+        repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 59px,
+          rgba(214,224,234,0.04) 60px
+        );
+    }
+
+    .hero-content {
+      position: relative; z-index:2;
+      text-align: center;
+      color: white;
+      padding: 20px;
+      animation: heroIn 1.8s cubic-bezier(0.16,1,0.3,1) both;
+    }
+    @keyframes heroIn {
+      from { opacity:0; transform: translateY(40px); }
+      to   { opacity:1; transform: translateY(0); }
+    }
+
+    .hero-eyebrow {
+      font-family: 'Jost', sans-serif;
+      font-weight: 200;
+      font-size: 0.72rem;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      color: var(--blue-light);
+      margin-bottom: 22px;
+      opacity: 0.85;
+    }
+
+    .hero-names {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(3.8rem, 12vw, 8rem);
+      line-height: 0.9;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-amp {
+      font-style: italic;
+      color: var(--blue-light);
+      font-size: 0.7em;
+      display: block;
+      margin: 6px 0;
+    }
+
+    .hero-date-strip {
+      margin-top: 28px;
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      border: 1px solid rgba(214,224,234,0.3);
+      padding: 10px 28px;
+      backdrop-filter: blur(8px);
+      background: rgba(255,255,255,0.07);
+    }
+    .hero-date-strip span {
+      font-family: 'Cinzel', serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      color: rgba(255,255,255,0.75);
+    }
+    .hero-date-strip .pipe {
+      width:1px; height:18px;
+      background: rgba(214,224,234,0.35);
+    }
+
+    .scroll-hint {
+      position:absolute; bottom:32px; left:50%; transform:translateX(-50%);
+      display:flex; flex-direction:column; align-items:center; gap:6px;
+      color: rgba(214,224,234,0.5);
+      font-size:0.65rem; letter-spacing:0.25em; text-transform:uppercase;
+      animation: scrollBob 2s ease-in-out infinite;
+    }
+    .scroll-hint svg { width:16px; }
+    @keyframes scrollBob {
+      0%,100%{ transform:translateX(-50%) translateY(0); }
+      50%{ transform:translateX(-50%) translateY(7px); }
+    }
+
+    /* ─────────────────── SECTION BASE ─────────────────── */
+    .section {
+      padding: 90px 24px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .section.wide { max-width: 1050px; }
+    .section.bg-pale { background: var(--blue-pale); max-width:100%; padding-left:0; padding-right:0; }
+    .section.bg-pale > .inner { max-width:860px; margin:auto; padding: 0 24px; }
+    .section.bg-champ { background: var(--champagne); max-width:100%; padding-left:0; padding-right:0; }
+    .section.bg-champ > .inner { max-width:860px; margin:auto; padding: 0 24px; }
+
+    /* ─────────────────── SECTION HEADING ─────────────────── */
+    .sec-head {
+      text-align:center;
+      margin-bottom: 48px;
+    }
+    .sec-head .label {
+      font-family:'Jost', sans-serif;
+      font-weight:200;
+      font-size:0.68rem;
+      letter-spacing:0.4em;
+      text-transform:uppercase;
+      color: var(--blue-mid);
+      margin-bottom:10px;
+    }
+    .sec-head h2 {
+      font-family:'Cormorant Garamond', serif;
+      font-weight:400;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      color: var(--slate);
+      line-height:1;
+    }
+    .sec-head h2 em { font-style:italic; color: var(--blue-mid); }
+    .sec-divider {
+      width:40px; height:1px;
+      background: var(--blue-mid);
+      margin: 14px auto 0;
+      transition: width 0.8s ease;
+    }
+    .reveal.active .sec-divider { width:100px; }
+
+    /* ─────────────────── REVEAL ─────────────────── */
+    .reveal {
+      opacity:0; transform:translateY(28px);
+      transition: opacity 0.85s cubic-bezier(0.2,1,0.3,1), transform 0.85s cubic-bezier(0.2,1,0.3,1);
+    }
+    .reveal.active { opacity:1; transform:translateY(0); }
+    .reveal-d1 { transition-delay:0.1s; }
+    .reveal-d2 { transition-delay:0.2s; }
+    .reveal-d3 { transition-delay:0.3s; }
+
+    /* ─────────────────── VENUE CARDS ─────────────────── */
+    .venue-grid { display:grid; gap:28px; }
+    @media(min-width:640px){ .venue-grid { grid-template-columns:1fr 1fr; } }
+
+    .venue-card {
+      background: white;
+      border: 1px solid var(--blue-light);
+      border-top: 3px solid var(--blue-mid);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 4px 24px rgba(58,95,125,0.07);
+    }
+    .venue-card:hover { transform:translateY(-5px); box-shadow:0 20px 50px rgba(58,95,125,0.13); }
+
+    /* top coloured header band */
+    .vc-header {
+      background: linear-gradient(135deg, var(--blue-deep), var(--blue-mid));
+      padding: 22px 28px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .vc-icon {
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+    .vc-icon svg { color: white; }
+    .vc-header-text {}
+    .vc-tag {
+      font-family:'Cinzel', serif;
+      font-size:0.58rem;
+      letter-spacing:0.32em;
+      color: rgba(214,224,234,0.8);
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 3px;
+    }
+    .vc-header-text h3 {
+      font-family:'Cormorant Garamond', serif;
+      font-size:1.2rem;
+      font-weight:400;
+      color: white;
+      line-height: 1.25;
+    }
+
+    /* body of card */
+    .vc-body {
+      padding: 24px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      flex: 1;
+    }
+
+    .vc-info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .vc-info-row .vc-info-icon {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: var(--blue-pale);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .vc-info-row .vc-info-icon svg { color: var(--blue-mid); }
+    .vc-info-row .vc-info-text {
+      display: flex; flex-direction: column;
+    }
+    .vc-info-row .vc-info-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.55rem;
+      letter-spacing: 0.25em;
+      color: var(--silver-dark);
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .vc-info-row .vc-info-value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      color: var(--slate);
+      line-height: 1.45;
+    }
+
+    .vc-divider {
+      height: 1px;
+      background: var(--blue-light);
+    }
+
+    /* footer with map button */
+    .vc-footer {
+      padding: 16px 28px 24px;
+    }
+    .map-link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 11px 20px;
+      background: var(--blue-pale);
+      border: 1px solid var(--blue-light);
+      color: var(--blue-mid);
+      font-family: 'Cinzel', serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-decoration: none;
+      transition: background 0.25s, color 0.25s, transform 0.2s, border-color 0.25s;
+      cursor: pointer;
+    }
+    .map-link-btn:hover {
+      background: var(--blue-mid);
+      color: white;
+      border-color: var(--blue-mid);
+      transform: translateY(-2px);
+    }
+
+    /* ─────────────────── ENTOURAGE ─────────────────── */
+    .entourage-grid {
+      display:grid; gap:32px;
+    }
+    @media(min-width:640px){ .entourage-grid { grid-template-columns:1fr 1fr; } }
+    @media(min-width:900px){ .entourage-grid.col3 { grid-template-columns:1fr 1fr 1fr; } }
+
+    .ent-block {
+      padding:28px;
+      background: white;
+      border: 1px solid var(--blue-light);
+      position:relative;
+    }
+    .ent-block::before {
+      content:'';
+      position:absolute; top:0; left:0;
+      width:3px; height:100%;
+      background: linear-gradient(to bottom, var(--blue-mid), var(--blue-light));
+    }
+    .ent-block .role {
+      font-family:'Cinzel', serif;
+      font-size:0.6rem;
+      letter-spacing:0.3em;
+      color: var(--blue-mid);
+      text-transform:uppercase;
+      margin-bottom:10px;
+    }
+    .ent-block .names {
+      font-family:'Cormorant Garamond', serif;
+      font-size:1.1rem;
+      font-weight:400;
+      color: var(--slate);
+      line-height:1.85;
+    }
+    .ent-block .names .num {
+      font-family:'Jost',sans-serif;
+      font-size:0.65rem;
+      color: var(--silver);
+      margin-right:5px;
+    }
+
+    /* ─────────────────── PROCESSIONAL ─────────────────── */
+    .processional {
+      display: flex; flex-direction: column; gap: 0;
+      max-width: 560px; margin: 0 auto;
+    }
+
+    /* supporting members */
+    .proc-row {
+      display: flex; align-items: center; gap: 18px;
+      padding: 15px 18px;
+      border-bottom: 1px solid rgba(90,125,154,0.1);
+      background: white;
+    }
+    .proc-row:last-of-type { border-bottom: none; }
+    .proc-row .proc-role {
+      font-family: 'Cinzel', serif; font-size: 0.6rem;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--blue-mid); min-width: 130px;
+    }
+    .proc-row .proc-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem; color: var(--slate);
+    }
+
+    /* separator between supporting rows and highlight cards */
+    .proc-separator {
+      display: flex; align-items: center; gap: 12px;
+      margin: 28px 0;
+    }
+    .proc-separator-line { flex:1; height:1px; background: var(--blue-light); }
+    .proc-separator-text {
+      font-family: 'Cinzel', serif; font-size: 0.55rem;
+      letter-spacing: 0.3em; color: var(--silver-dark);
+      white-space: nowrap;
+    }
+
+    /* highlight cards for Groom & Bride */
+    .proc-highlight-grid {
+      display: grid; gap: 16px;
+      max-width: 560px; margin: 0 auto;
+    }
+    @media(min-width: 480px){ .proc-highlight-grid { grid-template-columns: 1fr 1fr; } }
+
+    .proc-highlight {
+      position: relative;
+      padding: 30px 24px 26px;
+      text-align: center;
+      overflow: hidden;
+      border: 1px solid var(--blue-light);
+    }
+    .proc-highlight.groom {
+      background: linear-gradient(145deg, var(--blue-deep), var(--blue-mid));
+    }
+    .proc-highlight.bride {
+      background: linear-gradient(145deg, #b5738a, #c47e84);
+    }
+
+    /* subtle shimmer corner */
+    .proc-highlight::before {
+      content: '';
+      position: absolute; top: -30px; right: -30px;
+      width: 100px; height: 100px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+    }
+    .proc-highlight .ph-role {
+      font-family: 'Cinzel', serif;
+      font-size: 0.58rem; letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 10px;
+      display: block;
+    }
+    .proc-highlight .ph-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.55rem; font-weight: 400;
+      color: white;
+      line-height: 1.2;
+      display: block;
+    }
+    .proc-highlight .ph-line {
+      width: 36px; height: 1px;
+      background: rgba(255,255,255,0.35);
+      margin: 12px auto;
+    }
+
+    /* ─────────────────── SPONSORS LIST ─────────────────── */
+    .sponsors-list {
+      columns: 2; column-gap:40px;
+    }
+    @media(min-width:640px){ .sponsors-list { columns:3; } }
+    .sponsor-entry {
+      display:flex; align-items:baseline; gap:8px;
+      padding:9px 0; border-bottom:1px solid rgba(214,224,234,0.6);
+      break-inside:avoid;
+    }
+    .sponsor-entry .sn {
+      font-family:'Cinzel',serif; font-size:0.6rem;
+      color:var(--silver); min-width:20px; text-align:right;
+    }
+    .sponsor-entry .sname {
+      font-family:'Cormorant Garamond',serif;
+      font-size:1rem; color:var(--slate);
+    }
+
+    /* ─────────────────── DRESS CODE ─────────────────── */
+    .palette-row {
+      display:flex; flex-wrap:wrap; justify-content:center; gap:20px;
+    }
+    .color-chip {
+      display:flex; flex-direction:column; align-items:center; gap:10px;
+    }
+    .swatch {
+      width:64px; height:64px; border-radius:50%;
+      border:4px solid white;
+      box-shadow:0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .color-chip:hover .swatch { transform:scale(1.1); }
+    .color-chip span {
+      font-family:'Cinzel',serif; font-size:0.58rem;
+      letter-spacing:0.18em; color:var(--silver-dark);
+    }
+    .dress-note {
+      text-align:center; margin-top:30px;
+      font-family:'Cormorant Garamond',serif;
+      font-style:italic; font-size:1.1rem;
+      color: var(--blue-mid);
+    }
+
+    /* ─────────────────── FOOTER ─────────────────── */
+    footer {
+      background: linear-gradient(160deg, var(--blue-deep), #1a3347);
+      color:white; text-align:center;
+      padding:80px 24px;
+      position:relative; overflow:hidden;
+    }
+    footer .footer-orb {
+      position:absolute; border-radius:50%; filter:blur(80px);
+      background:rgba(214,224,234,0.08);
+    }
+    footer .fo1 { width:400px; height:400px; top:-100px; right:-100px; }
+    footer .fo2 { width:250px; height:250px; bottom:-50px; left:-50px; }
+
+    footer .footer-inner { position:relative; z-index:1; }
+    footer .ft-label {
+      font-family:'Jost',sans-serif; font-weight:200;
+      font-size:0.7rem; letter-spacing:0.4em; text-transform:uppercase;
+      color:rgba(214,224,234,0.5); margin-bottom:16px;
+    }
+    footer h2 {
+      font-family:'Cormorant Garamond',serif;
+      font-size: clamp(2.5rem,8vw,4.5rem);
+      font-weight:300; line-height:1;
+    }
+    footer p {
+      max-width:480px; margin:22px auto 0;
+      font-size:0.88rem; line-height:1.9;
+      color:rgba(214,224,234,0.65);
+    }
+    footer .hashtag {
+      margin-top:36px;
+      font-family:'Cinzel',serif;
+      font-size:0.7rem; letter-spacing:0.25em;
+      color:rgba(214,224,234,0.35);
+    }
+
+    /* ─────────────────── SEPARATORS ─────────────────── */
+    .sep {
+      display:flex; align-items:center; gap:12px;
+      margin:0 auto;
+      max-width:200px;
+    }
+    .sep-line { flex:1; height:1px; background:var(--blue-light); }
+    .sep-diamond {
+      width:6px; height:6px;
+      background:var(--blue-mid);
+      transform:rotate(45deg);
+    }
+
+    /* ─────────────────── FULL-WIDTH BAND ─────────────────── */
+    .band {
+      background: var(--blue-mid);
+      padding:18px 24px;
+      text-align:center;
+    }
+    .band p {
+      font-family:'Cinzel',serif;
+      font-size:0.65rem; letter-spacing:0.35em;
+      color:rgba(255,255,255,0.7);
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- FLORAL CORNERS -->
+<svg class="floral-corner tl" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.18">
+    <path d="M10,270 Q50,180 120,120" stroke="#5A7D9A" stroke-width="1.4" fill="none"/>
+    <path d="M10,270 Q70,200 150,150" stroke="#5A7D9A" stroke-width="1" fill="none"/>
+    <path d="M10,270 Q40,160 80,90" stroke="#5A7D9A" stroke-width="1.1" fill="none"/>
+    <path d="M10,270 Q30,200 55,130 Q70,90 85,60" stroke="#b89898" stroke-width="0.8" fill="none"/>
+    <!-- leaves -->
+    <ellipse cx="120" cy="120" rx="22" ry="10" fill="#5A7D9A" fill-opacity="0.2" transform="rotate(-40 120 120)"/>
+    <ellipse cx="148" cy="152" rx="18" ry="9" fill="#5A7D9A" fill-opacity="0.16" transform="rotate(-20 148 152)"/>
+    <ellipse cx="82" cy="92" rx="20" ry="9" fill="#5A7D9A" fill-opacity="0.18" transform="rotate(-55 82 92)"/>
+    <ellipse cx="58" cy="132" rx="14" ry="7" fill="#5A7D9A" fill-opacity="0.13" transform="rotate(-65 58 132)"/>
+    <!-- blossoms -->
+    <circle cx="118" cy="108" r="11" fill="#E8B4B8" fill-opacity="0.28"/>
+    <circle cx="118" cy="108" r="6" fill="#E8B4B8" fill-opacity="0.35"/>
+    <circle cx="118" cy="108" r="18" stroke="#E8B4B8" stroke-opacity="0.15" stroke-width="1" fill="none"/>
+    <circle cx="80" cy="76" r="9" fill="#E8B4B8" fill-opacity="0.25"/>
+    <circle cx="80" cy="76" r="5" fill="#E8B4B8" fill-opacity="0.32"/>
+    <circle cx="150" cy="143" r="8" fill="#E8B4B8" fill-opacity="0.2"/>
+    <circle cx="150" cy="143" r="4" fill="#E8B4B8" fill-opacity="0.28"/>
+    <!-- buds -->
+    <ellipse cx="100" cy="96" rx="4" ry="8" fill="#E8B4B8" fill-opacity="0.18" transform="rotate(-45 100 96)"/>
+    <ellipse cx="135" cy="130" rx="3.5" ry="7" fill="#E8B4B8" fill-opacity="0.16" transform="rotate(-25 135 130)"/>
+    <ellipse cx="68" cy="105" rx="3" ry="6" fill="#E8B4B8" fill-opacity="0.14" transform="rotate(-60 68 105)"/>
+    <!-- dots -->
+    <circle cx="95" cy="115" r="2.5" fill="#5A7D9A" fill-opacity="0.18"/>
+    <circle cx="130" cy="115" r="2" fill="#5A7D9A" fill-opacity="0.15"/>
+    <circle cx="70" cy="88" r="2" fill="#E8B4B8" fill-opacity="0.2"/>
+  </g>
+</svg>
+<svg class="floral-corner tr" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.14">
+    <path d="M10,270 Q50,180 120,120" stroke="#5A7D9A" stroke-width="1.4" fill="none"/>
+    <path d="M10,270 Q70,200 150,150" stroke="#5A7D9A" stroke-width="1" fill="none"/>
+    <path d="M10,270 Q40,160 80,90" stroke="#5A7D9A" stroke-width="1.1" fill="none"/>
+    <ellipse cx="120" cy="120" rx="22" ry="10" fill="#5A7D9A" fill-opacity="0.18" transform="rotate(-40 120 120)"/>
+    <ellipse cx="148" cy="152" rx="18" ry="9" fill="#5A7D9A" fill-opacity="0.14" transform="rotate(-20 148 152)"/>
+    <ellipse cx="82" cy="92" rx="20" ry="9" fill="#5A7D9A" fill-opacity="0.16" transform="rotate(-55 82 92)"/>
+    <circle cx="118" cy="108" r="11" fill="#E8B4B8" fill-opacity="0.22"/>
+    <circle cx="118" cy="108" r="6" fill="#E8B4B8" fill-opacity="0.28"/>
+    <circle cx="118" cy="108" r="18" stroke="#E8B4B8" stroke-opacity="0.12" stroke-width="1" fill="none"/>
+    <circle cx="80" cy="76" r="9" fill="#E8B4B8" fill-opacity="0.2"/>
+    <circle cx="80" cy="76" r="5" fill="#E8B4B8" fill-opacity="0.26"/>
+    <ellipse cx="100" cy="96" rx="4" ry="8" fill="#E8B4B8" fill-opacity="0.15" transform="rotate(-45 100 96)"/>
+    <ellipse cx="135" cy="130" rx="3.5" ry="7" fill="#E8B4B8" fill-opacity="0.13" transform="rotate(-25 135 130)"/>
+  </g>
+</svg>
+<svg class="floral-corner bl" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.13">
+    <path d="M10,270 Q50,180 120,120" stroke="#5A7D9A" stroke-width="1.4" fill="none"/>
+    <path d="M10,270 Q70,200 150,150" stroke="#5A7D9A" stroke-width="1" fill="none"/>
+    <path d="M10,270 Q40,160 80,90" stroke="#5A7D9A" stroke-width="1.1" fill="none"/>
+    <ellipse cx="120" cy="120" rx="22" ry="10" fill="#5A7D9A" fill-opacity="0.18" transform="rotate(-40 120 120)"/>
+    <ellipse cx="82" cy="92" rx="20" ry="9" fill="#5A7D9A" fill-opacity="0.15" transform="rotate(-55 82 92)"/>
+    <circle cx="118" cy="108" r="10" fill="#E8B4B8" fill-opacity="0.2"/>
+    <circle cx="80" cy="76" r="8" fill="#E8B4B8" fill-opacity="0.18"/>
+    <ellipse cx="100" cy="96" rx="4" ry="8" fill="#E8B4B8" fill-opacity="0.14" transform="rotate(-45 100 96)"/>
+  </g>
+</svg>
+<svg class="floral-corner br" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.13">
+    <path d="M10,270 Q50,180 120,120" stroke="#5A7D9A" stroke-width="1.4" fill="none"/>
+    <path d="M10,270 Q70,200 150,150" stroke="#5A7D9A" stroke-width="1" fill="none"/>
+    <path d="M10,270 Q40,160 80,90" stroke="#5A7D9A" stroke-width="1.1" fill="none"/>
+    <ellipse cx="120" cy="120" rx="22" ry="10" fill="#5A7D9A" fill-opacity="0.18" transform="rotate(-40 120 120)"/>
+    <ellipse cx="82" cy="92" rx="20" ry="9" fill="#5A7D9A" fill-opacity="0.15" transform="rotate(-55 82 92)"/>
+    <circle cx="118" cy="108" r="10" fill="#E8B4B8" fill-opacity="0.2"/>
+    <circle cx="80" cy="76" r="8" fill="#E8B4B8" fill-opacity="0.18"/>
+    <ellipse cx="100" cy="96" rx="4" ry="8" fill="#E8B4B8" fill-opacity="0.14" transform="rotate(-45 100 96)"/>
+  </g>
+</svg>
+
+<!-- HEADER -->
+<header>
+  <div class="monogram">J &nbsp;&amp;&nbsp; D &nbsp;·&nbsp; April 25, 2026</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-orb orb1"></div>
+  <div class="hero-orb orb2"></div>
+  <div class="hero-orb orb3"></div>
+  <div class="hero-lines"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">The Wedding of</p>
+    <div class="hero-names">
+      <span>Jolyn</span>
+      <span class="hero-amp">&amp;</span>
+      <span>Dioswa</span>
+    </div>
+    <div class="hero-date-strip">
+      <span>Saturday</span>
+      <div class="pipe"></div>
+      <span>April 25, 2026</span>
+      <div class="pipe"></div>
+      <span>Bago City, Negros Occidental</span>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <svg viewBox="0 0 16 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <rect x="1" y="1" width="14" height="22" rx="7"/>
+      <line x1="8" y1="6" x2="8" y2="10"/>
+    </svg>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- CEREMONY & RECEPTION -->
+<section class="section reveal">
+  <div class="sec-head">
+    <p class="label">Save the Date</p>
+    <h2>The <em>Celebration</em></h2>
+    <div class="sec-divider"></div>
+  </div>
+  <div class="venue-grid">
+    <!-- Ceremony -->
+    <div class="venue-card reveal reveal-d1">
+      <div class="vc-header">
+        <div class="vc-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21V12h6v9"/><path d="M12 3v3"/></svg>
+        </div>
+        <div class="vc-header-text">
+          <span class="vc-tag">Ceremony</span>
+          <h3>St. John the Baptist<br/>Parish Church</h3>
+        </div>
+      </div>
+      <div class="vc-body">
+        <div class="vc-info-row">
+          <div class="vc-info-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="vc-info-text">
+            <span class="vc-info-label">Location</span>
+            <span class="vc-info-value">Bago City, Negros Occidental</span>
+          </div>
+        </div>
+        <div class="vc-divider"></div>
+        <div class="vc-info-row">
+          <div class="vc-info-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="vc-info-text">
+            <span class="vc-info-label">Time</span>
+            <span class="vc-info-value">9:30 AM</span>
+          </div>
+        </div>
+        <div class="vc-divider"></div>
+        <div class="vc-info-row">
+          <div class="vc-info-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div class="vc-info-text">
+            <span class="vc-info-label">Date</span>
+            <span class="vc-info-value">Saturday, April 25, 2026</span>
+          </div>
+        </div>
+      </div>
+      <div class="vc-footer">
+        <a class="map-link-btn" href="https://www.google.com/maps/search/St.+John+the+Baptist+Parish+Church+Bago+City+Negros+Occidental" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Open in Google Maps
+        </a>
+      </div>
+    </div>
+
+    <!-- Reception -->
+    <div class="venue-card reveal reveal-d2">
+      <div class="vc-header">
+        <div class="vc-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div class="vc-header-text">
+          <span class="vc-tag">Reception</span>
+          <h3>Subere Residence</h3>
+        </div>
+      </div>
+      <div class="vc-body">
+        <div class="vc-info-row">
+          <div class="vc-info-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="vc-info-text">
+            <span class="vc-info-label">Location</span>
+            <span class="vc-info-value">Brgy. Malingin, Bago City,<br/>Negros Occidental</span>
+          </div>
+        </div>
+        <div class="vc-divider"></div>
+        <div class="vc-info-row">
+          <div class="vc-info-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="vc-info-text">
+            <span class="vc-info-label">Time</span>
+            <span class="vc-info-value">Following the Ceremony</span>
+          </div>
+        </div>
+        <div class="vc-divider"></div>
+        <div class="vc-info-row">
+          <div class="vc-info-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div class="vc-info-text">
+            <span class="vc-info-label">Date</span>
+            <span class="vc-info-value">Saturday, April 25, 2026</span>
+          </div>
+        </div>
+      </div>
+      <div class="vc-footer">
+        <a class="map-link-btn" href="https://www.google.com/maps/search/Brgy+Malingin+Bago+City+Negros+Occidental" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Open in Google Maps
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BAND: PROCESSIONAL ORDER -->
+<div class="band">
+  <p>Order of the Processional</p>
+</div>
+
+<!-- PROCESSIONAL – KEY PEOPLE -->
+<section class="section reveal" style="padding-bottom:40px;">
+
+  <!-- Supporting members -->
+  <div class="processional">
+    <div class="proc-row">
+      <span class="proc-role">Best Man</span>
+      <span class="proc-name">John Paul Fermiza</span>
+    </div>
+    <div class="proc-row">
+      <span class="proc-role">Groom's Parents</span>
+      <span class="proc-name">Angelo Trayco &amp; Sonia Trayco</span>
+    </div>
+    <div class="proc-row">
+      <span class="proc-role">Maid of Honor</span>
+      <span class="proc-name">Jonabel A. Subere</span>
+    </div>
+    <div class="proc-row">
+      <span class="proc-role">Bride's Parents</span>
+      <span class="proc-name">Jose Hervin M. Subere &amp; Jocelyn Subere</span>
+    </div>
+  </div>
+
+  <!-- Separator -->
+  <div class="proc-separator">
+    <div class="proc-separator-line"></div>
+    <span class="proc-separator-text">The Couple</span>
+    <div class="proc-separator-line"></div>
+  </div>
+
+  <!-- Groom & Bride highlight cards -->
+  <div class="proc-highlight-grid">
+    <div class="proc-highlight groom">
+      <span class="ph-role">Groom</span>
+      <div class="ph-line"></div>
+      <span class="ph-name">Dioswa G. Trayco</span>
+    </div>
+    <div class="proc-highlight bride">
+      <span class="ph-role">Bride</span>
+      <div class="ph-line"></div>
+      <span class="ph-name">Jolyn A. Subere</span>
+    </div>
+  </div>
+
+</section>
+
+<!-- PRINCIPAL SPONSORS -->
+<section class="section bg-pale reveal" style="padding-top:80px; padding-bottom:80px;">
+  <div class="inner">
+    <div class="sec-head">
+      <p class="label">Principal Sponsors</p>
+      <h2>Ninang <em>&amp;</em> Ninong</h2>
+      <div class="sec-divider"></div>
+    </div>
+    <div class="sponsors-list">
+      <div class="sponsor-entry"><span class="sn">1</span><span class="sname">Anna Trayco</span></div>
+      <div class="sponsor-entry"><span class="sn">2</span><span class="sname">Angela Fermiza</span></div>
+      <div class="sponsor-entry"><span class="sn">3</span><span class="sname">Arthuro Fulgencio</span></div>
+      <div class="sponsor-entry"><span class="sn">4</span><span class="sname">Bella Fermiza</span></div>
+      <div class="sponsor-entry"><span class="sn">5</span><span class="sname">Geraldine Abong</span></div>
+      <div class="sponsor-entry"><span class="sn">6</span><span class="sname">Leah Makilan</span></div>
+      <div class="sponsor-entry"><span class="sn">7</span><span class="sname">Ma Fe Roxas</span></div>
+      <div class="sponsor-entry"><span class="sn">8</span><span class="sname">Ma. Teresa Tablason</span></div>
+      <div class="sponsor-entry"><span class="sn">9</span><span class="sname">Mary Alen Genosa</span></div>
+      <div class="sponsor-entry"><span class="sn">10</span><span class="sname">Mayelena Pacilan</span></div>
+      <div class="sponsor-entry"><span class="sn">11</span><span class="sname">Dr. Pacilan</span></div>
+      <div class="sponsor-entry"><span class="sn">12</span><span class="sname">Nerily Ignacio</span></div>
+      <div class="sponsor-entry"><span class="sn">13</span><span class="sname">Noime De Los Reyes</span></div>
+      <div class="sponsor-entry"><span class="sn">14</span><span class="sname">Rizalie Gimulgada</span></div>
+      <div class="sponsor-entry"><span class="sn">15</span><span class="sname">Romeo Togonon</span></div>
+      <div class="sponsor-entry"><span class="sn">16</span><span class="sname">Romeo Jimenez</span></div>
+      <div class="sponsor-entry"><span class="sn">17</span><span class="sname">Rowel Valdez</span></div>
+      <div class="sponsor-entry"><span class="sn">18</span><span class="sname">Roy Trayco</span></div>
+      <div class="sponsor-entry"><span class="sn">19</span><span class="sname">Lalaine Yukon</span></div>
+      <div class="sponsor-entry"><span class="sn">20</span><span class="sname">Rema Trayco</span></div>
+      <div class="sponsor-entry"><span class="sn">21</span><span class="sname">Bob Trayco</span></div>
+      <div class="sponsor-entry"><span class="sn">22</span><span class="sname">Vicente Fermiza</span></div>
+      <div class="sponsor-entry"><span class="sn">23</span><span class="sname">Wilma Soriano</span></div>
+      <div class="sponsor-entry"><span class="sn">24</span><span class="sname">Mellen Intrampas</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECONDARY SPONSORS -->
+<section class="section reveal" style="padding-bottom:50px;">
+  <div class="sec-head">
+    <p class="label">Secondary Sponsors</p>
+    <h2>The <em>Symbols</em></h2>
+    <div class="sec-divider"></div>
+  </div>
+  <div class="entourage-grid reveal reveal-d1">
+    <div class="ent-block">
+      <div class="role">Candle Sponsors</div>
+      <div class="names">Steven Trayco<br/>Angelyn Trayco</div>
+    </div>
+    <div class="ent-block">
+      <div class="role">Cord Sponsors</div>
+      <div class="names">Hevelyn Santillana<br/>Joey Santillana</div>
+    </div>
+    <div class="ent-block">
+      <div class="role">Veil Sponsors</div>
+      <div class="names">EJ Trayco<br/>Shiela Trayco</div>
+    </div>
+  </div>
+</section>
+
+<!-- BRIDESMAIDS & GROOMSMEN -->
+<section class="section bg-champ reveal">
+  <div class="inner">
+    <div class="sec-head">
+      <p class="label">The Wedding Party</p>
+      <h2>Bridesmaids <em>&amp;</em> Groomsmen</h2>
+      <div class="sec-divider"></div>
+    </div>
+    <div class="entourage-grid">
+      <div class="ent-block reveal reveal-d1">
+        <div class="role">Bridesmaids</div>
+        <div class="names">
+          <span class="num">1.</span>Jonalyn A. Subere<br/>
+          <span class="num">2.</span>Jessa Marie Derecho<br/>
+          <span class="num">3.</span>Devy Ubas<br/>
+          <span class="num">4.</span>Rubylyn Magtubo<br/>
+          <span class="num">5.</span>Cyndie Delgado
+        </div>
+      </div>
+      <div class="ent-block reveal reveal-d2">
+        <div class="role">Groomsmen</div>
+        <div class="names">
+          <span class="num">1.</span>John Lee Santillana<br/>
+          <span class="num">2.</span>Gabriel Grime<br/>
+          <span class="num">3.</span>Mark Trayco<br/>
+          <span class="num">4.</span>Romeo Magbanua<br/>
+          <span class="num">5.</span>Marjon Guarra
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEARERS & FLOWER GIRLS -->
+<section class="section reveal" style="padding-bottom:50px;">
+  <div class="sec-head">
+    <p class="label">The Little Ones</p>
+    <h2>Bearers <em>&amp;</em> Flower Girls</h2>
+    <div class="sec-divider"></div>
+  </div>
+  <div class="entourage-grid col3 reveal reveal-d1">
+    <div class="ent-block">
+      <div class="role">Coin Bearer</div>
+      <div class="names">Jheo Santillana</div>
+    </div>
+    <div class="ent-block">
+      <div class="role">Ring Bearer</div>
+      <div class="names">Xian Earl Trayco</div>
+    </div>
+    <div class="ent-block">
+      <div class="role">Bible / Banner Bearer</div>
+      <div class="names">Kieron Shaun Subere</div>
+    </div>
+  </div>
+  <div class="ent-block reveal reveal-d2" style="margin-top:24px;">
+    <div class="role">Flower Girls</div>
+    <div class="names" style="display:flex; flex-wrap:wrap; gap:0 40px;">
+      <span><span class="num">1.</span>Jhellian A. Subere</span>
+      <span><span class="num">2.</span>Zhaille Ysabelle Y. Corsino</span>
+      <span><span class="num">3.</span>Justine Adharie Trayco</span>
+      <span><span class="num">4.</span>Sydney Ubas</span>
+    </div>
+  </div>
+</section>
+
+<!-- USHERETTES -->
+<section class="section bg-pale reveal" style="padding-top:60px; padding-bottom:60px;">
+  <div class="inner">
+    <div class="sec-head">
+      <p class="label">Welcoming Our Guests</p>
+      <h2><em>Usherettes</em></h2>
+      <div class="sec-divider"></div>
+    </div>
+    <div class="ent-block reveal reveal-d1" style="max-width:520px; margin:0 auto;">
+      <div class="role">Usherettes</div>
+      <div class="names" style="display:flex; flex-wrap:wrap; gap:0 40px;">
+        <span>Hazel Ann Subere</span>
+        <span>Noree Ann Ong</span>
+        <span>Khate Ubas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DRESS CODE -->
+<section class="section reveal">
+  <div class="sec-head">
+    <p class="label">Attire</p>
+    <h2>Dress <em>Code</em></h2>
+    <div class="sec-divider"></div>
+  </div>
+  <div class="palette-row reveal reveal-d1">
+    <div class="color-chip">
+      <div class="swatch" style="background:#5A7D9A;"></div>
+      <span>Dusty Blue</span>
+    </div>
+    <div class="color-chip">
+      <div class="swatch" style="background:#D6E0EA;"></div>
+      <span>Light Blue</span>
+    </div>
+    <div class="color-chip">
+      <div class="swatch" style="background:#F5F1E6;"></div>
+      <span>Champagne</span>
+    </div>
+    <div class="color-chip">
+      <div class="swatch" style="background:#E8B4B8;"></div>
+      <span>Blush Pink</span>
+    </div>
+  </div>
+  <p class="dress-note reveal reveal-d2">Semi-Formal Attire in our wedding colors</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="reveal">
+  <div class="footer-orb fo1"></div>
+  <div class="footer-orb fo2"></div>
+  <div class="footer-inner">
+    <p class="ft-label">With heartfelt gratitude</p>
+    <h2>Thank You</h2>
+    <p>Your presence is our greatest gift. However, should you wish to honor us, a monetary contribution would be sincerely appreciated as we begin our new life together.</p>
+    <p class="hashtag">#JolynAndDioswa2026</p>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(
+    entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('active'); }),
+    { threshold: 0.08 }
+  );
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
